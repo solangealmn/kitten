@@ -1,0 +1,55 @@
+html {
+  background: url(images/night.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 980px;
+}
+.kitten {
+  width: 100%;
+  height: 330px;
+  background: url(images/kitten-small.png) no-repeat bottom center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    background: url(images/sunny-day.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .kitten {
+    background: url(images/kitten-medium.png) no-repeat bottom center;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1025px) {
+  html {
+    background: url(images/dawn.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .kitten {
+    background: url(images/kitten-large.png) no-repeat bottom center;
+  }
+}
